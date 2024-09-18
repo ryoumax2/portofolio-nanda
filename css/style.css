@@ -2,446 +2,335 @@
   padding: 0;
   margin: 0;
 }
-
-body {
-  background-color: #ffefcd;
-  overflow-x: hidden;
-  font-family: "Nunito", sans-serif;
+body,
+html {
+  background-color: black;
+  height: 2000px;
 }
-.navbar {
-  background-color: transparent;
+.navbar-brand {
+  margin-left: 3%;
+  color: rgb(255, 246, 246);
+}
+#navbarNav ul {
+  float: right;
+  display: flex;
+  margin-left: 380%;
+}
+.nav-link {
+  color: rgb(255, 255, 255);
+  transition: 0.3s;
+  font-weight: bold;
+  border-bottom: 0 solid transparent;
+}
+.nav-link:hover {
+  transform: scale(1.1);
+  color: red;
+  border-bottom: 1px solid black;
+}
+.home {
+  height: 430px;
+}
+.home img {
+  width: 500px;
+  height: 671px;
+  margin-top: -30%;
+  float: right;
+  margin-right: -73px;
 }
 .header {
-  color: #403833;
-  text-shadow: 1px 1px 3px rgb(92, 90, 90);
-  margin-top: 5%;
-  position: absolute;
-  width: 800px;
-  font-size: 27px;
-  margin-left: 15%;
-  animation: fade 1 0.8s;
-}
-
-.sub-header h4 {
-  color: #403833;
-  text-shadow: 1px 1px 3px rgb(92, 90, 90);
-  margin-top: 15%;
-  margin-left: 10%;
-  animation: fade 1 0.8s;
-}
-
-.sub-header p {
-  color: #403833;
-  text-shadow: 1px 1px 3px rgb(92, 90, 90);
-  margin-top: 10%;
-  width: 550px;
-  margin-left: 10%;
-  animation: fade 1 0.8s;
-}
-
-.border-kosong {
-  width: 215px;
-  height: 213px;
-  background-color: #7c9381;
-  float: right;
-  margin-right: 18%;
-  margin-top: -10%;
-  box-shadow: 2px 2px 4px grey;
-  border-radius: 50%;
-  animation: top-fade 1 0.6s;
-}
-.gambar img {
-  width: 250px;
-  float: right;
-  border-radius: 50%;
-  margin-top: -20%;
-  margin-right: -19%;
-  animation: Bottom-fade 1 0.8s;
-  position: relative;
-  z-index: 9999999999;
-}
-.button a {
-  background-color: #e09132;
-  border: none;
-  padding: 15px;
-  border-radius: 20px;
   color: white;
-  font-weight: bold;
-  margin-left: 10%;
 }
+.sub-headerh4 {
+  padding-top: 18%;
 
-.button {
-  animation: Bottom-fade 1 0.8s;
-  margin-left: 0;
-  margin-top: 5%;
+  color: white;
 }
-.button a {
-  transition: 0.3s;
-  text-decoration: none;
-}
-.button :hover {
-  box-shadow: 2px 2px 6px rgb(83, 83, 83);
-  background-color: rgb(170, 41, 41);
-}
-
-.border-kosong2 {
-  width: 215px;
-  height: 213px;
-  background-color: #7c9381;
-  box-shadow: 2px 2px 4px grey;
-  border-radius: 50%;
-  margin-left: 15%;
-  margin-top: 30%;
-  animation: fade 1 0.8s;
-}
-
-.gambar2 img {
-  width: 250px;
-  margin-top: -28%;
-  /* top: -10%; */
-  position: absolute;
-  margin-left: 14%;
-  border-radius: 50%;
-  animation: Bottom-fade 1 0.8s;
-}
-.text-about h1 {
-  margin-top: -18%;
-  float: right;
-  font-size: 25px;
-  margin-right: 55%;
-  animation: left-fade 1 0.8s;
-}
-.text-about p {
-  width: 550px;
-  float: right;
-  margin-top: -13%;
-  margin-right: 15%;
-  animation: right-fade 1 0.8s;
-}
-.border-kosong3 {
-  background-color: black;
-  width: 1px;
-  margin-left: 50%;
-  margin-top: 20%;
-  height: 1000px;
-  position: relative;
-  animation: fade 1 0.8s;
-}
-
-.border-kosong4 {
-  background-color: black;
-  width: 45px;
-  left: 587px;
-  margin-top: -70%;
-  border-radius: 50%;
-  height: 44px;
-  animation: left-fade 1 0.8s;
-  position: absolute;
-}
-.border-kosong5 {
-  background-color: black;
-  width: 45px;
-  left: 587px;
-  margin-top: -50%;
-  border-radius: 50%;
-  height: 44px;
-  position: absolute;
-  animation: right-fade 1 0.8s;
-}
-.border-kosong6 {
-  background-color: black;
-  width: 45px;
-  left: 587px;
-  margin-top: -34%;
-  border-radius: 50%;
-  height: 44px;
-  position: absolute;
-  animation: left-fade 1 0.8s;
-}
-.border-kosong7 {
-  background-color: black;
-  width: 45px;
-  left: 587px;
-  margin-top: -17%;
-  border-radius: 50%;
-  height: 44px;
-  position: absolute;
-  animation: right-fade 1 0.8s;
-}
-.text-keahlian1 h1 {
-  float: right;
-  margin-top: -19%;
-  font-size: 22px;
-  font-weight: bold;
-  margin-right: 37%;
-  animation: Bottom-fade 1 0.8s;
-}
-
-.text-keahlian1 p {
-  float: right;
-  margin-top: -15%;
-  width: 400px;
-  margin-right: 10%;
-  animation: Bottom-fade 1 0.8s;
-}
-/* 2 */
-.text-keahlian2 h1 {
-  margin-top: -45%;
-  font-size: 22px;
-  font-weight: bold;
-  margin-left: 35%;
-  font: 30px;
-  margin-bottom: 3%;
-  font-weight: bold;
-  animation: Bottom-fade 1 0.8s;
-}
-.text-keahlian2 p {
-  /* margin-top: 34%; */
-  width: 400px;
-  text-align: right;
-  margin-left: 10%;
-  animation: Bottom-fade 1 0.8s;
-}
-/* 3 */
-.text-keahlian3 h1 {
-  float: right;
-  margin-top: -5%;
-  font-size: 22px;
-  font-weight: bold;
-  margin-right: 31%;
-  margin-bottom: 3%;
-  animation: Bottom-fade 1 0.8s;
-}
-
-.text-keahlian3 p {
-  margin-top: 13%;
-  width: 400px;
-  margin-left: 57%;
-  animation: Bottom-fade 1 0.8s;
-}
-/* 4 */
-.text-keahlian4 h1 {
-  margin-top: 9%;
-  font-size: 22px;
-  font-weight: bold;
-  margin-left: 35%;
-  font: 30px;
-  margin-bottom: 3%;
-  font-weight: bold;
-  animation: Bottom-fade 1 0.8s;
-}
-.text-keahlian4 p {
-  /* margin-top: 34%; */
-  width: 400px;
-  text-align: right;
-  margin-left: 10%;
-  animation: Bottom-fade 1 0.8s;
-}
-
-.border {
-  width: 750px;
-  height: 500px;
-  background-color: #415546;
-  margin: 28% auto;
-  border-radius: 30px;
-}
-
-.border-project {
-  width: 350px;
-  height: 90px;
-  margin: -4%;
-  margin-left: 16%;
-  border-radius: 20px;
-  position: absolute;
+.sub-headerP {
+  color: white;
+  font-weight: 300;
+  background-color: rgb(218, 141, 0);
+  width: 270px;
+  padding-top: 4px;
+  padding-right: 4px;
+  padding-left: 4px;
+  padding-top: 0;
   text-align: center;
-  line-height: 90px;
-  font-weight: bold;
-  background-color: #d9d9d9;
+  border-radius: 5px;
 }
-.border-project h1 {
-  line-height: 90px;
-}
-.list-project img {
-  border-radius: 20px;
-  width: 150px;
-  border: none;
-  box-shadow: 2px 2px 4px grey;
-}
-.gambar-1 {
-  border: none;
-  transition: 0.3s;
-}
-.gambar-2 {
-  border: none;
-  transition: 0.3s;
-}
-.gambar-3 {
-  border: none;
-  transition: 0.3s;
-}
-.gambar-4 {
-  border: none;
-  transition: 0.3s;
-}
-.gambar-1:hover {
-  transform: scale(1.1);
-}
-.gambar-2:hover {
-  transform: scale(1.1);
-}
-.gambar-3:hover {
-  transform: scale(1.1);
-}
-.gambar-4:hover {
-  transform: scale(1.1);
-}
-
-.list-project ul {
-  display: flex;
-  padding-top: 20%;
-  padding-left: 8%;
-  justify-content: center;
+.btn a {
+  color: white;
   margin-top: 2%;
-  gap: 10px;
-  margin-right: 10%;
-}
-.list-project li {
-  display: flex;
-  margin: 10px;
+  border-radius: 10px;
+  padding: 10px;
   text-decoration: none;
+  background-color: red;
   transition: 0.3s;
 }
-.list-project li:hover {
-  transform: scale(1.2);
+.btn a:hover {
+  color: white;
+  transform: scale(1.1);
+  box-shadow: 1px 1px 4px white;
+}
+.icons {
+  margin-top: 5%;
 }
 
-.border-contact {
+.containerAbout {
+  margin-top: 19%;
+  padding-top: 15%;
+  background-color: rgb(105, 111, 116);
+  height: 1000px;
+}
+.box-kosong {
+  margin-top: 4%;
+  padding-top: 10%;
+  margin-left: 8%;
+  width: 250px;
+  height: 300px;
+  border-radius: 10px;
+  background-color: rgb(0, 0, 0);
+}
+.box-kosong img {
+  width: 250px;
+  height: 320px;
+  margin-left: 8%;
+  margin-top: -35%;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px black;
+  transition: 0.3s;
+}
+.box-kosong img:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.textAbout {
+  margin-left: 35%;
+  margin-top: -20%;
+}
+.textAbout h1 {
+  width: 123px;
+  background-color: rgb(255, 217, 0);
+}
+.textAbout h6 {
+  font-weight: 400;
+}
+.textAbout p {
+  font-weight: 400;
   width: 750px;
-  height: 700px;
-  background-color: #415546;
-  margin: 28% auto;
-  border-radius: 30px;
 }
-.border-contact h1 {
-  text-align: center;
-  position: relative;
-  z-index: 999999999999;
+span {
+  background-color: rgb(255, 217, 0);
+  padding: 2px;
 }
 
-.border-judul-contact {
-  width: 350px;
-  height: 90px;
-  margin: -4%;
-  margin-left: 16%;
-  border-radius: 20px;
-  position: absolute;
-  line-height: 90px;
+.containerKeahlian {
+  margin-top: -7%;
+  background-color: rgb(105, 111, 116);
+  height: 1000px;
+}
+.headertext {
+  text-align: center;
+}
+.headertext h1 {
   font-weight: bold;
-  background-color: #d9d9d9;
 }
-.border-judul-contact h1 {
-  line-height: 90px;
+.headertext p {
+  width: 550px;
+  margin: 0 auto;
+  text-align: left;
 }
-.inputan {
-  padding-top: 14%;
+
+.card-list {
+  list-style-type: none;
+  padding: 0;
+  margin-left: 15%;
+  margin-top: 8%;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  /* gap: 1rem; Spasi antara kartu */
+}
+
+.card-list li {
+  gap: 5px; /* Kartu dapat tumbuh dan menyusut */
+}
+.card {
+  background-color: white;
+  border: none;
+  margin-bottom: 3%;
+  margin-top: -5%;
+}
+.img-card-1 img {
+  width: 150px;
+  padding: 5px;
+  align-items: center;
+  display: block;
+  margin: 0 auto;
+  transition: 0.3s;
+}
+.img-card-1 img:hover {
+  transform: scale(1.1);
+}
+.containerimage {
+  padding-top: 20%;
+}
+.text-header {
+  color: white;
+  text-align: center;
+}
+.text-header h6 {
+  width: 450px;
+  margin: 0 auto;
+  text-align: left;
+}
+/* CSS untuk container image */
+.containerimage {
+  margin-top: -8%;
+  padding-bottom: 5%;
+  background-color: #07617c; /* Warna latar belakang opsional */
+}
+
+/* CSS untuk section image */
+.image {
+  max-width: 900px; /* Lebar maksimal section */
+  margin: 0 auto; /* Tengah halaman */
+}
+
+/* CSS untuk header text */
+.text-header {
+  margin-bottom: 2rem;
+}
+
+/* CSS untuk daftar gambar */
+.image-list {
+  list-style-type: none; /* Menghapus bullet points */
+  padding: 0;
+  margin: 0;
+  display: flex; /* Menyusun gambar dalam baris */
+  flex-wrap: wrap; /* Membungkus gambar ke baris berikutnya jika diperlukan */
+  gap: 1rem; /* Jarak antara gambar */
+}
+
+/* CSS untuk item dalam daftar gambar */
+.image-list li {
+  flex: 1 1 calc(33.333% - 1rem); /* Tiga gambar dalam satu baris */
+  box-sizing: border-box; /* Menghitung padding dan border dalam ukuran total */
+  max-width: calc(33.333% - 1rem); /* Maksimal lebar item */
+}
+
+/* CSS untuk gambar */
+.image-list img {
+  margin: 0 auto;
+  width: 100%; /* Memastikan gambar memenuhi lebar item */
+  max-width: 80%;
+  height: auto; /* Mempertahankan rasio aspek gambar */
+  display: block; /* Menghilangkan spasi di bawah gambar */
+  border: none; /* Menghapus border */
+  transition: 0.3s;
+  object-fit: cover; /* Menjaga gambar tetap proporsional */
+}
+.image-list img:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  box-shadow: 5px 5px 5px rgb(255, 253, 253);
+  border: 3px solid red;
+}
+
+.containerContact {
+  /* margin-top: %; */
+  height: 1000px;
+  background-color: rgb(105, 111, 116);
+}
+.headerContact h6 {
+  margin: auto;
+  padding-top: 8%;
   text-align: center;
   color: white;
+  font-weight: bold;
+  width: 450px;
 }
-.inputNama {
-  padding: 8px;
+.border {
+  background-color: white;
+  width: 500px;
+  margin: 5% auto;
+  border-radius: 20px;
 }
-.inputEmail {
-  padding: 8px;
+.border h3 {
+  text-align: center;
+  padding: 10px;
 }
-.inputPassword {
-  padding: 8px;
+.Name {
+  margin-top: 5%;
+  margin-left: 8%;
+  padding: 10px;
+  width: 400px;
 }
-.inputMasukan {
-  padding: 8px;
+.email {
+  margin-top: 5%;
+  margin-left: 8%;
+  padding: 10px;
+  width: 400px;
+}
+.Password {
+  margin-top: 5%;
+  margin-left: 8%;
+  padding: 10px;
+  width: 400px;
+}
+.Masukan {
+  margin-top: 5%;
+  margin-left: 8%;
+  padding: 10px;
+  width: 400px;
 }
 .submit {
+  margin-top: 5%;
+  margin-left: 8%;
   padding: 10px;
-  border-radius: 10px;
-  border: none;
-  background-color: rgb(255, 153, 0);
-  color: white;
-  font-weight: bold;
+  margin-bottom: 10px;
   transition: 0.3s;
+  width: 400px;
 }
-.submit:hover {
-  box-shadow: 2px 2px 4px gray;
+.name,
+.Email,
+.password,
+.masukan,
+.inputan {
+  width: 400px;
+}
+.inputan:hover {
+  background-color: red;
+  box-shadow: 2px 2px 5px black;
+  cursor: pointer;
+  color: WHTIE;
 }
 footer {
-  background-color: grey;
-  padding: 20px;
+  background-color: white;
+  padding: 15px;
   text-align: center;
-  color: white;
-  font-weight: bold;
 }
 footer a {
-  color: rgb(218, 44, 0);
+  color: black;
   text-decoration: none;
-  font-weight: bold;
-  font-size: 20px;
-  text-shadow: 1px 1px 4px rgb(255, 255, 255);
+  transition: 0.3s;
+}
+footer a:hover {
+  transform: scale(1.1);
+  color: red;
 }
 
-/* Animasi */
-
-/* muncul */
-@keyframes fade {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
+/* CSS untuk gambar pada ukuran layar kecil */
+@media (max-width: 768px) {
+  .image-list li {
+    flex: 1 1 calc(50% - 1rem); /* Dua gambar dalam satu baris pada layar kecil */
+    max-width: calc(50% - 1rem); /* Maksimal lebar item pada layar kecil */
   }
 }
 
-/* kiri */
-@keyframes left-fade {
-  from {
-    transform: translateX(-20px);
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
+/* CSS untuk gambar pada ukuran layar sangat kecil */
+@media (max-width: 480px) {
+  .image-list li {
+    flex: 1 1 100%; /* Satu gambar dalam satu baris pada layar sangat kecil */
+    max-width: 100%; /* Maksimal lebar item pada layar sangat kecil */
   }
 }
-/* dari atas */
-@keyframes top-fade {
-  from {
-    transform: translateY(-20px);
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-/* bawah */
-@keyframes Bottom-fade {
-  from {
-    transform: translateY(20px);
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* kanan */
-@keyframes right-fade {
-  from {
-    transform: translateX(20px);
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-/* mobile */

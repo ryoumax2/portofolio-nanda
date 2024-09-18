@@ -2,439 +2,122 @@
   * {
     padding: 0;
     margin: 0;
-  }
-
-  body {
-    background-color: #ffefcd;
-    overflow-x: hidden;
     font-family: "Nunito", sans-serif;
   }
 
-  .navbar {
-    position: fixed;
-    width: 100%;
-    top: 1px;
-    background-color: transparent; /* Match body background or another color for contrast */
-    z-index: 1000; /* Ensure it stays on top of other content */
+  body,
+  html {
+    overflow-x: hidden;
   }
-  .nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 10%; /* Adjust padding as needed */
-    margin-top: 2%;
-    animation: top-fade 1 0.8s;
-  }
-
-  .nav h1 {
-    color: black;
-  }
-
-  .nav ul {
-    display: flex;
-    list-style: none;
+  .navbar-toggler {
     display: none;
   }
-
-  .nav li {
-    color: rgb(0, 0, 0);
-    margin: 0 15px; /* Adjust spacing as needed */
-    display: none;
+  .home {
+    height: 615px;
   }
-
-  .nav a {
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    display: none;
-    transition: 0.3s;
+  .home img {
+    width: 150px;
+    margin-right: 10%;
+    height: auto;
+    border-radius: 20px;
+    margin-top: 20%;
   }
-
-  .nav a:hover {
-    display: none;
-    transform: scale(1.1);
+  .box-kosong-2 {
+    margin-top: 18%;
+    width: 150px;
+    height: 200px;
+    float: right;
+    border-radius: 20px;
+    background-color: rgb(105, 111, 116);
   }
-  .header {
-    color: #403833;
-    text-shadow: 1px 1px 3px rgb(92, 90, 90);
-    margin-top: 7%;
-    position: absolute;
-    width: 800px;
+  .sub-headerh4 h4 {
+    margin-top: 35%;
+    font-size: 11px;
+  }
+  .header h1 {
     font-size: 20px;
-    margin-left: 15%;
-    animation: fade 1 0.8s;
   }
-
-  .sub-header h4 {
-    color: #403833;
-    text-shadow: 1px 1px 3px rgb(92, 90, 90);
+  .sub-headerP {
+    font-size: 11px;
+    width: 200px;
+  }
+  .btn {
+    display: none;
+  }
+  .box-kosong {
     margin-top: 40%;
-    margin-left: 5%;
-    font-size: 14px;
-    animation: fade 1 0.8s;
-    margin-bottom: 3%;
-  }
-
-  .sub-header p {
-    color: #403833;
-    text-shadow: 1px 1px 3px rgb(92, 90, 90);
-    margin-top: 13%;
-    width: 250px;
-    margin-left: 5%;
-    font-size: 14px;
-    font-weight: 300;
-    animation: fade 1 0.8s;
-    margin-bottom: 3%;
-  }
-
-  .border-kosong {
-    width: 115px;
-    height: 113px;
-    background-color: #7c9381;
+    width: 180px;
+    height: 180px;
+    margin-right: 8px;
     float: right;
-    margin-right: 18%;
-    margin-top: 25%;
-    box-shadow: 2px 2px 4px grey;
-    border-radius: 50%;
-    animation: top-fade 1 0.6s;
+    /* display: none; */
   }
-  .gambar img {
-    width: 160px;
+  .box-kosong img {
+    width: 170px;
+    height: 210px;
+    margin-right: 10px;
     float: right;
-    border-radius: 50%;
-    margin-top: 0%;
-    margin-right: -33%;
-    animation: Bottom-fade 1 0.8s;
-    position: relative;
-    z-index: 9999999999;
-  }
-  .button a {
-    background-color: #e09132;
-    border: none;
-    padding: 5px;
-    font-size: 14px;
-    border-radius: 8px;
-    color: white;
-    position: relative;
-    font-weight: bold;
-    margin-left: 10%;
-  }
-
-  .button {
-    animation: Bottom-fade 1 0.8s;
-    margin-left: 0;
     margin-top: 5%;
+    /* display: none; */
   }
-  .button a {
-    transition: 0.3s;
-    text-decoration: none;
-  }
-  .button :hover {
-    box-shadow: 2px 2px 6px rgb(83, 83, 83);
-    background-color: rgb(170, 41, 41);
-  }
-
-  .border-kosong2 {
-    width: 115px;
-    height: 113px;
-    background-color: #7c9381;
-    box-shadow: 2px 2px 4px grey;
-    border-radius: 50%;
+  .textAbout {
+    /* color: l; */
+    margin-top: -65%;
+    float: left;
     margin-left: 5%;
-    margin-top: 90%;
-    position: absolute;
-    animation: fade 1 0.8s;
   }
-
-  .gambar2 img {
-    width: 150px;
-    margin-top: 67%;
-    /* top: -10%; */
-    position: absolute;
-    margin-left: 3%;
-    border-radius: 50%;
-    animation: Bottom-fade 1 0.8s;
-  }
-  .text-about h1 {
-    margin-top: 60%;
-    width: 150px;
-    border-bottom: 1px solid #c5d3c0;
-    margin-right: 25%;
-    float: right;
-    position: relative;
-    font-size: 20px;
-    animation: left-fade 1 0.8s;
-  }
-  .text-about p {
-    width: 320px;
-    font-size: 15px;
-    float: left;
-    margin-top: 15%;
-    margin-left: 5%;
-    animation: right-fade 1 0.8s;
-  }
-  .border-kosong3 {
-    background-color: black;
-    width: 1px;
-    margin-left: 10%;
-    margin-top: 230%;
-    height: 800px;
-    position: relative;
-    animation: fade 1 0.8s;
-  }
-
-  .border-kosong4 {
-    background-color: black;
-    width: 45px;
-    left: 20px;
-    margin-top: -170%;
-    border-radius: 50%;
-    height: 44px;
-    float: left;
-    animation: left-fade 1 0.8s;
-    /* position: absolute; */
-  }
-  .border-kosong5 {
-    background-color: black;
-    width: 45px;
-    left: 20px;
-    margin-top: -120%;
-    border-radius: 50%;
-    height: 44px;
-    position: absolute;
-    animation: right-fade 1 0.8s;
-  }
-  .border-kosong6 {
-    background-color: black;
-    width: 45px;
-    left: 20px;
-    margin-top: -70%;
-    border-radius: 50%;
-    height: 44px;
-    position: absolute;
-    animation: left-fade 1 0.8s;
-  }
-  .border-kosong7 {
-    background-color: black;
-    width: 45px;
-    left: 20px;
-    margin-top: -27%;
-    border-radius: 50%;
-    height: 44px;
-    position: absolute;
-    animation: right-fade 1 0.8s;
-  }
-  .text-keahlian1 h1 {
-    margin-top: -177%;
-    font-size: 22px;
-    font-weight: bold;
-    float: left;
-    margin-left: 25%;
-    animation: Bottom-fade 1 0.8s;
-  }
-
-  .text-keahlian1 p {
-    float: left;
-    position: absolute;
-    margin-top: -165%;
-    width: 260px;
-    margin-left: 20%;
-    animation: Bottom-fade 1 0.8s;
-  }
-  /* 2 */
-  .text-keahlian2 h1 {
-    margin-top: -127%;
-    font-size: 22px;
-    font-weight: bold;
-    margin-left: 25%;
-    position: absolute;
-    font: 30px;
-    margin-bottom: 3%;
-    font-weight: bold;
-    animation: Bottom-fade 1 0.8s;
-  }
-  .text-keahlian2 p {
-    margin-top: -115%;
-    position: absolute;
-    width: 260px;
-    text-align: left;
-    margin-left: 20%;
-    animation: Bottom-fade 1 0.8s;
-  }
-  /* 3 */
-  .text-keahlian3 h1 {
-    position: absolute;
-    float: left;
-    margin-top: -75%;
-    font-size: 22px;
-    font-weight: bold;
-    margin-left: 25%;
-    margin-bottom: 3%;
-    animation: Bottom-fade 1 0.8s;
-  }
-
-  .text-keahlian3 p {
-    position: absolute;
-    margin-top: -60%;
-    float: left;
-    width: 250px;
-    margin-left: 21%;
-    animation: Bottom-fade 1 0.8s;
-  }
-  /* 4 */
-  .text-keahlian4 h1 {
-    margin-top: -25%;
-    font-size: 22px;
-    font-weight: bold;
-    margin-left: 25%;
-    position: absolute;
-    font: 30px;
-    margin-bottom: 3%;
-    font-weight: bold;
-    animation: Bottom-fade 1 0.8s;
-  }
-  .text-keahlian4 p {
-    margin-top: -14%;
-    position: absolute;
-    width: 250px;
-    text-align: left;
-    margin-left: 21%;
-    animation: Bottom-fade 1 0.8s;
-    margin-bottom: 20%;
-  }
-
-  .border {
-    margin-top: 110%;
-    width: 90%; /* Adjusted width for mobile */
-    max-width: 350px; /* Ensure it doesn't get too large */
-    height: 550px;
-    background-color: #415546;
-    margin: 28% auto;
-    border-radius: 30px;
-  }
-
-  .border-project {
-    width: 90%; /* Adjusted width for mobile */
-    max-width: 250px; /* Ensure it doesn't get too large */
-    height: 70px; /* Height suitable for mobile */
-    line-height: 70px; /* Align text vertically */
-    margin: 0 auto; /* Center horizontally */
-    border-radius: 20px;
-    margin-left: 13%;
-    margin-top: -10%;
-    text-align: center;
-    font-weight: bold;
-    background-color: #d9d9d9;
-    font-size: 16px; /* Adjusted font size for better readability on small screens */
-  }
-  .gambar-1 {
-    width: 90px;
-    float: left;
-    margin-left: -75%;
-    transition: 0.3s;
-  }
-  .gambar-2 {
-    width: 90px;
-    position: absolute;
-    margin-right: -27%;
-    /* display: none; */
-    transition: 0.3s;
-    transition: 0.3s;
-  }
-  .gambar-3 {
-    width: 90px;
-    position: absolute;
-    margin-top: 60%;
-    margin-left: -50%;
-    transition: 0.3s;
-    /* display: none; */
-  }
-  .gambar-4 {
-    /* display: none; */
-    width: 90px;
-    margin-right: -27%;
-    margin-top: 60%;
-    position: absolute;
-    transition: 0.3s;
-  }
-  .gambar-1 :hover {
-    transform: scale(1.1);
-  }
-  .gambar-2 :hover {
-    transform: scale(1.1);
-  }
-  .gambar-3 :hover {
-    transform: scale(1.1);
-  }
-  .gambar-4 :hover {
-    transform: scale(1.1);
-  }
-
-  .border-contact {
+  .textAbout p {
     width: 350px;
-    height: 650px;
-    background-color: #415546;
-    margin: 28% auto;
-    border-radius: 30px;
+    margin-top: 10%;
   }
-  .border-contact h1 {
-    text-align: center;
-    position: relative;
-    z-index: 999999999999;
+  .span-cut {
+    background-color: transparent;
+    width: 190px;
   }
 
-  .border-judul-contact {
-    width: 250px;
-    height: 90px;
-    margin-top: -16%;
-    box-shadow: 2px 2px 4px gray;
-    margin-left: 12%;
+  /* keahlian */
+  .containerKeahlian {
+    height: 1900px;
+  }
+  /* skil */
+  .headertext h1 {
+    margin-top: -45%;
+  }
+  .headertext p {
+    width: 350px;
+    margin: 0 auto;
+  }
+  .card {
+    margin-top: 5%;
+    margin-left: 0;
+  }
+  .card-list img .figma {
+    margin-left: -100%;
+  }
+  /* image */
+  .text-header h6 {
+    width: 350px;
+  }
+  .image-list li img {
+    width: 350px;
     border-radius: 20px;
-    position: absolute;
-    line-height: 90px;
-    font-weight: bold;
-    background-color: #d9d9d9;
   }
+  .headerContact h6 {
+    width: 350px;
+  }
+  .border {
+    width: 350px;
+  }
+  .name,
+  .Email,
+  .password,
+  .masukan,
   .inputan {
-    padding-top: 14%;
-    text-align: center;
-    color: white;
-  }
-  .inputNama {
-    padding: 8px;
-  }
-  .inputEmail {
-    padding: 8px;
-  }
-  .inputPassword {
-    padding: 8px;
-  }
-  .inputMasukan {
-    padding: 8px;
-  }
-  .submit {
-    padding: 10px;
-    border-radius: 10px;
-    border: none;
-    background-color: rgb(255, 153, 0);
-    color: white;
-    font-weight: bold;
-    transition: 0.3s;
-  }
-  .submit:hover {
-    box-shadow: 2px 2px 4px gray;
+    width: 270px;
+    margin: 0 auto;
   }
   footer {
-    background-color: grey;
-    padding: 20px;
-    text-align: center;
-    color: white;
-    font-weight: bold;
-  }
-  footer a {
-    color: rgb(218, 44, 0);
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 20px;
-    text-shadow: 1px 1px 4px rgb(255, 255, 255);
+    width: auto;
+    padding: 10px;
   }
 }

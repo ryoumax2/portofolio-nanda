@@ -3,210 +3,244 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portofolio Nanda</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Portofolio</title>
+    <!-- link-bootstrap -->
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+    crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- link - css -->
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/mobile.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
-<!-- aos -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- link - Font -->
+    <!-- aos link -->
   </head>
   <body>
+    <!-- Navbar -->
     <div class="container">
-      <section class="home">
-        <nav class="navbar navbar-expand-lg navbar-light ">
-          <div class="container-fluid" style="position: fixed; top: 10px; z-index: 999999999999;">
-            <a class="navbar-brand" href="#">Portofolio</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav d-flex " style="float: right; margin-left: 70%;">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#keahlian">Keahlian</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#Project" style="color: black;">Project</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#Contact" style="color: black;">Contact</a>
-                </li>
-               
-              </ul>
-            </div>
-          </div>
-        </nav>
-          
-          
-          <div class="header">
-            <h1>Nanda Arya H.P</h1>
-          </div>
-          <div class="sub-header">
-            <h4>Hi, Walcome nama saya</h4>
-            <p>Minat saya di bidang IT adalah sebagai Web-Development
-                dan Mempelajari Bidang IT lainnya...</p>
-          </div>
-          
-          </div>
-          <div class="gambar">
-            <div class="border-kosong" ></div>
-            <img src="./img/nanda2baru.png" alt="Nanda">
-          </div>
-          <div class="button"><a href="#about">About-me</a></div>
-      </section>
-
-
-      <section class="about" id="about">
-        <div class="gambar2">
-          <div class="border-kosong2" data-aos="fade-down" data-aos-duration="5000"></div>
-          <img src="./img/nanda1baru.png" data-aos="fade-up" data-aos-duration="5000" alt="Nanda">
-
-          <div class="text-about">
-            <h1 data-aos="fade-up"
-            data-aos-anchor-placement="top-bottom" data-aos-duration="8000">About-Me</h1>
-            <p data-aos="fade-left" data-aos-duration="5000">Saya Lahir di desa Panawangan tanggal 1 juni. saya lulusan Smpn 2  Negeri,
-              dan Status Saya masih Seorang pelajar di Smk 1 Cibitung. Alasan saya masuk jurusan SIJA 
-             ( Sistem Informasi Jaringan dan Aplikasi ), adalah saya berminat dibidang IT untuk beberapa
-             tahun ke depannya. Di SMK 1 Cibitung saya mempelajari cara Membangun Sebuah server 
-             Debian, Memprogram Arduino uno untuk membuat Alat Sensor Otomatis, 
-             Contohnya penyiraman Otomatis, sensor ultrasonic. namun tetap minat saya adalah
-             sebagai Web-development / mobile development, namun saat ini saya akan terus belajar
-             untuk mengetahui apa kekurangan dalam diri saya </p>
+      <nav class="navbar navbar-expand-lg" style="position: fixed; top: 0; z-index: 9999999;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Portofolio</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#skils"
+                  >Skils</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#image">image</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
           </div>
         </div>
+      </nav>
+      <!-- Navbar - selesai -->
+      <!-- home - page  -->
+      <section class="home" id="home">
+        <div class="sub-headerh4" data-aos="fade-up">
+          <h4>My Name Is</h4>
+        </div>
+        <div class="header" data-aos="fade-up">
+          <h1>NANDA ARYA HANDIKA PUTRA</h1>
+        </div>
 
+        <div class="sub-headerP" data-aos="fade-up">
+          <p>I`M fRONT END WEB DEVELOPMENT</p>
+        </div>
+        <div class="box-kosong-2" data-aos="fade-left">
+          <img src="./img/NANDA.jpeg" alt="" />
+        </div>
+        <div class="btn"><a href="#About" data-aos="fade-up">About-me</a></div>
       </section>
-      <section class="keahlian" id="keahlian">
-        <div class="border-kosong3" data-aos="fade-up" data-aos-duration="8000"></div>
-        <div class="border-kosong4" data-aos="fade-left" data-aos-duration="8000"></div>
-        <div class="border-kosong5" data-aos="fade-right" data-aos-duration="8000"></div>
-        <div class="border-kosong6" data-aos="fade-left" data-aos-duration="8000"></div>
-        <div class="border-kosong7" data-aos="fade-right" data-aos-duration="8000"></div>
-        <div class="keahlian">
-          <div class="kelompok-keahlian">
-
-            <div class="text-keahlian1" >
-              <h1  data-aos="fade-up"
-              data-aos-anchor-placement="top-bottom" data-aos-duration="8000">HTML</h1>
-              <p  data-aos="fade-up"
-              data-aos-anchor-placement="top-bottom" data-aos-duration="8000">Saya mempelajari Html di tahun 2021, saya mempelajari 
-                dan berlatih sehingga saat ini saya dapat membuat
-                website menggunakan Html dengan Baik, </p>
+      <!-- home - page - selesai -->
+    </div>
+    <div class="containerAbout" id="About">
+      <section class="about">
+        <div class="box-kosong" data-aos="fade-right">
+          <img src="./img/NANDA2.jpeg"  data-aos="fade-right"  alt="" />
+        </div>
+        <div class="textAbout" >
+          <h1 data-aos="fade-up">HELLO</h1>
+          <h6 data-aos="fade-up">My Name <span>Nanda Arya</span></h6>
+          <p data-aos="fade-right">
+            Saya sudah mempelajari <div class="span-cut" data-aos="fade-right">
+            web development dari tahun 2021 awal hingga sekarang, sekarang saya sudah menguasai basic menjadi web
+            DEVELOPMENT, dan saya juga mempelajari bagaimana cara untuk men
+            desain web menggunakan </div>
+            <p data-aos="fade-right">
+               figma. Next Target saya untuk mempelajari
+            beberapa bahasa yang menurut saya sangat penting menjadi Web
+            development seperti :
+            <span> 1. pyton.</span> <span>2. React</span>
+            <span>3. Next.js</span> berikut adalah target saya untuk menguasai
+            bahasa pemrograman. dan saya di sekolah juga mempelajari cara
+            penginstallan windows, debian, dan menginstall debian-12 di proxmox 
+            </p>
+          
+          </p>
+        </div>
+      </section>
+    </div>
+    <div class="containerKeahlian" id="skils">
+      <section class="keahlian">
+        <div class="headertext">
+          <h1 data-aos="fade-up">Skils</h1>
+          <p data-aos="fade-up">
+            saya selama 3 tahun belakangan ini saya sudah mempelajari dasar-dasar sebagai web-development yaitu: berupa.... 
+            <span>html</span> <span>css</span> <span>java Script</span> <span>Bootstrap</span> <span>Figma</span>
+          </p>
+        </div>
+        <ul class="card-list">
+          <li>
+            <div class="card" style="width: 18rem" data-aos="flip-right">
+              <div class="img-card-1">
+                <img src="./img/html.png" class="card-img-top" alt="html" />
+              </div>
+              <div class="card-body-1">
+                <p class="card-text-1" style="padding: 5px;">
+                  HTML: saya sudah menggunakan html sejak awal saya belajar sampai sekarang, sehingga saya bisa menggunakan html dengan fleksibel.
+                </p>
+              </div>
             </div>
-            <div class="text-keahlian2" >
-              <h1  data-aos="fade-up"
-              data-aos-anchor-placement="top-bottom" data-aos-duration="8000">CSS</h1>
-              <p  data-aos="fade-up"
-              data-aos-anchor-placement="top-bottom" data-aos-duration="8000">Saya mempelajari CSS di tahun 2022, saya mempelajari 
-                dan berlatih sehingga saat ini saya dapat membuat
-                website menggunakan CSS dengan Baik,  </p>
+          </li>
+          <li>
+            <div class="card" style="width: 18rem;" data-aos="flip-right">
+              <div class="img-card-1">
+                <img src="./img/css-3.png" class="card-img-top" alt="html" style="height: 150px;"/>
+              </div>
+              <div class="card-body-1">
+                <p class="card-text-1" style="padding: 5px;">
+                  Css: saya sudah menggunakan css sejak setelah saya belajar html hingga sekarang, sehingga saya bisa menggunakan css dengan fleksibel.
+                </p>
+              </div>
             </div>
-            <div class="text-keahlian3" >
-              <h1  data-aos="fade-up"
-              data-aos-anchor-placement="top-bottom" data-aos-duration="8000">JAVA SCRIPT</h1>
-              <p  data-aos="fade-up"
-              data-aos-anchor-placement="top-bottom" data-aos-duration="8000">Saya mempelajari Java Script di tahun 2024 sampai sekarang,
-                saya mempelajari  dan berlatih Hingga saat ini  </p>
+          </li>
+          <li>
+            <div class="card" style="width: 18rem;" data-aos="flip-right">
+              <div class="img-card-1">
+                <img src="./img/js.png" class="card-img-top" alt="html" style="height: 150px; object-fit: cover;"/>
+              </div>
+              <div class="card-body-1">
+                <p class="card-text-1" style="padding: 5px; width: 295px;">
+                  JavaScript: Setelah saya belajar Html dan Css saya memulai belajar javaScript, saat ini saya Bisa menggunakan javaScript dasar seperti dom
+                 
+                </p>
+              </div>
             </div>
-            <div class="text-keahlian4" >
-              <h1  data-aos="fade-up"
-              data-aos-anchor-placement="top-bottom" data-aos-duration="8000">REACT JS</h1>
-              <p  data-aos="fade-up"
-              data-aos-anchor-placement="top-bottom" data-aos-duration="8000">Saya mempelajari REACT JS  adalah framework dari js, saya
-                mempelajari REACT JS baru baru ini dan masih belum terlalu
-                fasih untuk menggunakannya  </p>
+          </li>
+          <li>
+            <div class="card" style="width: 18rem;" data-aos="flip-right">
+              <div class="img-card-1">
+                <img src="./img/bootrap.png" class="bootrap card-img-top" alt="html" style="height: 150px; "/>
+              </div>
+              <div class="card-body-1">
+                <p class="card-text-1" style="padding: 5px; ">
+                 Bootstrap: Saya menggunakan Bootstrap Hanya untuk mempermudah saya untuk memberikan style css pada html dan juga sangat membantu untuk responsive desain,
+                 mungkin next saya ingin mempelajari Tailwind
+                </p>
+              </div>
             </div>
+          </li>
+          <li>
+            <div class="card" style="width: 18rem;" data-aos="flip-right">
+              <div class="img-card-1">
+                <img src="./img/figma.png" class="figma card-img-top" alt="html"/>
+              </div>
+              <div class="card-body-1">
+                <p class="card-text-1" style="padding: 5px; ">
+                  Figma: Saya menggunakan figma untuk merancaing web, agar kita sebagai Front-End tidak Pusing mengurus desain di awal, sehingga figma sangat membantu untuk merancang desain awal
+                </p>
+              </div>
+            </div>
+          </li>
+        </section>
+      </ul>
+    </div>
+    <div class="containerimage">
+      <section class="image" id="image">
+        <div class="text-header">
+          <h1 data-aos="fade-up">IMAGE</h1>
+          <h6 data-aos="fade-up">Ini adalah foto / dokumentasi saya melakukan beberapa percobaan seperti bikin web warkop digital, lalu mencoba untuk membuat website sekolah, melakukan instalas debian melalui proxmox, dan mencoba membuat penyiraman otomatis menggunakan IOT</h6>
+        </div>
+        <ul class="image-list">
+          <li data-aos="flip-right"><img src="./img/WhatsApp Image 2024-09-09 at 00.04.52 (1).jpeg" alt="..." style="border: none; object-fit: cover;"></li>
+          <li data-aos="flip-right"><img src="./img/WhatsApp Image 2024-09-09 at 00.04.52.jpeg" alt="..." style="border: none;"></li>
+          <li data-aos="flip-right"><img src="./img/WhatsApp Image 2024-09-09 at 00.04.53 (2).jpeg" alt="..." style="border: none;"></li>
+          <li data-aos="flip-right"><img src="./img/WhatsApp Image 2024-09-09 at 00.04.53 (3).jpeg" alt="..." style="border: none;"></li>
+          <li data-aos="flip-right"><img src="./img/2024_08_04_00_24_IMG_7985.JPG" alt="..." class="image-terakhir" style="border: none; height: 300px;"></li>
+        </ul>
+      </section>
+    </div>
+      <div class="containerContact" id="contact">
+        <section class="contact" data-aos="fade-up">
+          <div class="headerContact">
+            <h6>Jika anda ingin mengContact saya silahkan untuk isi di bawah ini</h6>
           </div>
-       
-      </section>
+          <div class="box-contact">
+            <div class="border">
+              <h3>Contact Me</h3>
+          
 
-        <section class="Project" id="Project" data-aos="zoom-in" data-aos-duration="5000">
-          <div class="border">
-            <div class="border-project">
-              <h1>Project</h1>
-            </div>
-            <div class="list-project">
-              <ul>
-               <div class="gambar-1" style="border: none;">
-                <img src="./img/WhatsApp Image 2024-09-09 at 00.04.52 (1).jpeg" alt="..." data-aos="fade-down" data-aos-duration="5000">
-               </div>
-               <div class="gambar-2">
-                <img src="./img/WhatsApp Image 2024-09-09 at 00.04.52.jpeg"  alt="..." data-aos="fade-down" data-aos-duration="5000">
-               </div>
-               <div class="gambar-3">
-                <img src="./img/WhatsApp Image 2024-09-09 at 00.04.53 (2).jpeg" data-aos="fade-down" data-aos-duration="5000">
-               </div>
-               <div class="gambar-4">
-                <img src="./img/WhatsApp Image 2024-09-09 at 00.04.53 (3).jpeg"  alt="..." data-aos="fade-down" data-aos-duration="5000">
-               </div>
-               
-              </ul>
+                <label for="name" class="Name" style="border: none; ">
+                  Masukan Nama Anda : 
+                <br>
+                <br>
+                <input type="text" class="name" placeholder="Nama anda" style=" padding:5px;  border-radius: 50px; border: 1px solid black; text-align: center">
+              </label>
+              <br>
+              <label for="email" class="email" style="border: none;">
+                Masukan email Anda : 
+                <br>
+                <br>
+                <input type="email" class="Email" placeholder="email@gmail.com" style=" padding:5px;  border-radius: 50px; border: 1px solid black; text-align: center">
+              </label>
+              <br>
+              <label for="password" class="Password" style="border: none;">
+                Masukan password Anda : 
+                <br>
+                <br>
+                <input type="password" class="password" placeholder="*******" style="  padding:5px;  border-radius: 50px; border: 1px solid black; text-align: center">
+              </label>
+              <br>
+              <label for="masukan" class="Masukan" style="border: none;">
+                Masukan masukan Anda : 
+                <br>
+                <br>
+                <input type="text" class="masukan" placeholder="masukan anda" style="  border-radius: 20px; border: 1px solid black; text-align: center; padding: 40px; ">
+              </label>
+              <br>
+              <label for="submit" class="submit" style="border: none;">
+                <br>
+                <br>
+                <input type="submit" class="inputan" style=" transition: .3s; padding:5px;    border-radius: 10px; border: 1px solid black; text-align: center">
+              </label>
+         
             </div>
           </div>
         </section>
-
-        <section class="contact" id="Contact" data-aos="zoom-in" data-aos-duration="5000">
-          <div class="border-contact">
-            <div class="border-judul-contact">
-              <h1>Contact</h1>
-
-            </div>
-            <div class="inputan">
-              <label for="Nama">
-                masukan nama anda:
-                <br />
-                <br />
-                <input type="text" class="inputNama" placeholder="YourName" data-aos="fade-right" data-aos-duration="5000"/>
-              </label>
-              <br />
-              <br />
-              <label for="Email">
-                Email : 
-                <br />
-                <br />
-                <input type="Email" class="inputEmail" placeholder="portofolioNanda@gmail.com" data-aos="fade-left" data-aos-duration="5000" />
-              </label>
-            <br />
-            <br />
-            <label for="Password">
-              Password :
-              <br />
-              <br />
-              <input type="password" class="inputPassword" placeholder="*******" data-aos="fade-right" data-aos-duration="5000"/>
-            </label>
-            <br />
-            <br />
-
-            <label for="masukan">
-              masukan anda :
-              <br>
-              <br>
-              <input type="text" class="inputMasukan" placeholder="Masukan Anda" data-aos="fade-left" data-aos-duration="5000">
-            </label>
-            <br/>
-            <br/>
-
-            <label for="submit">
-              silahkan kirim !!
-              <br />
-              <br />
-              <input type="submit" class="submit" data-aos="fade-up" data-aos-duration="5000"/>
-            </label> 
-            <br>
-            <br>
-          </div>
-        </div>
-        </section>
-        
-        <footer>Copyright by <a href="https://instagram.com/nandaarye2">  Nanda arya</a></footer>
       </div>
     </div>
-    <script src="./js/index.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
+    <footer>Copyright by <a href="https://www.instagram.com/nandaarye2">Nanda Arya</a></footer>
+
+    <!-- script -->
+
   </body>
 </html>
