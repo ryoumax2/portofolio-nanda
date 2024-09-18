@@ -68,11 +68,14 @@
   }
   .textAbout p {
     width: 350px;
-    margin-top: 10%;
+    margin-top: 2%;
   }
   .span-cut {
     background-color: transparent;
-    width: 190px;
+    width: 166px;
+  }
+  .p1 {
+    margin-top: -5%;
   }
 
   /* keahlian */
